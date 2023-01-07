@@ -1,0 +1,28 @@
+<header class="main-header">
+  <nav class="main-header__nav">
+    <ul class="main-header__item-list">
+      <li class="main-header__item">
+        <a class="<%=path==='/'?'active':''%>" href="/">Home</a>
+      </li>
+      <li class="main-header__item">
+        <a
+          class="<%=path==='/admit-student'?'active':''%>"
+          href="/admit-student"
+          >Admit Student</a
+        >
+      </li>
+      <li class="main-header__item">
+        <a class="<%=path==='/admin/home'?'active':''%>" href="/admin/home"
+          >Admin Home</a
+        >
+      </li>
+      <li class="main-header__item">
+        <a
+          class="<%=path==='/admin/all-students'?'active':''%>"
+          href="/admin/all-students"
+          >All students</a
+        >
+      </li>
+    </ul>
+  </nav>
+</header>

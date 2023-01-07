@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <link rel="stylesheet" href="/css/header.css" />
+    <style>
+      body {
+  margin: 0 auto;
+  padding: 0;
+  background: #222;
+}
+
+.left {
+  left: 25px;
+}
+
+.right {
+  right: 25px;
+}
+
+.center {
+  text-align: center;
+}
+
+.bottom {
+  position: absolute;
+  bottom: 25px;
+}
+
+#gradient {
+  background: #999955;
+  background-image: linear-gradient(#DAB046 20%, #D73B25 20%, #D73B25 40%, #C71B25 40%, #C71B25 60%, #961A39 60%, #961A39 80%, #601035 80%);
+  margin: 0 auto;
+  margin-top: 100px;
+  width: 100%;
+  height: 150px;
+}
+
+#gradient:after {
+  content: "";
+  position: absolute;
+  background: #E9E2D0;
+  left: 50%;
+  margin-top: -67.5px;
+  margin-left: -270px;
+  padding-left: 20px;
+  border-radius: 5px;
+  width: 520px;
+  height: 275px;
+  z-index: -1;
+}
+
+#card {
+  position: absolute;
+  width: 450px;
+  height: 225px;
+  padding: 25px;
+  padding-top: 0;
+  padding-bottom: 0;
+  left: 50%;
+  top: 67.5px;
+  margin-left: -250px;
+  background: #E9E2D0;
+  box-shadow: -20px 0 35px -25px black, 20px 0 35px -25px black;
+  z-index: 5;
+}
+
+#card img {
+  width: 150px;
+  float: left;
+  border-radius: 5px;
+  margin-right: 20px;
+  -webkit-filter: sepia(1);
+  -moz-filter: sepia(1);
+  filter: sepia(1);
+}
+
+#card h2 {
+  font-family: courier;
+  color: #333;
+  margin: 0 auto;
+  padding: 0;
+  font-size: 15pt;
+}
+
+#card p {
+  font-family: courier;
+  color: #555;
+  font-size: 13px;
+}
+
+#card span {
+  font-family: courier;
+}
+.btn{
+  width: 110px;
+  height: 40px;
+  color: white;
+  background-color: #3498db;
+  text-decoration: none;
+  border: 2px solid #3498db;
+  border-radius: 30px;
+}
+a{
+  text-decoration: none;
+  color: black;
+}
+    </style>
+    <title><%=pageTitle%></title>
+  </head>
+  <body>
+     <%-include('../includes/navigation.ejs')-%>
+    <div id="gradient"></div>
+<div id="card">
+ 
+  <img src="data:image/jpeg;base64,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"/>
+  <h2>Name: <%=record.name%></h2>
+  <h2>Father Name:<%=record.fatherName%></h2>
+  <p>Email :<%=record.email%></p>
+  <p>ID :<%=record.id%></p>
+  <p>DOB <%=record.dateOfBirth%></p>
+  <span class="left bottom">Gender :<%=record.gender%></span>
+  <span class="right bottom">adress: <%=record.address%></span>
+  <button class="btn "><a href="/admin/all-students">Go To Back</a></button>
+</div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  </body>
+</html>
